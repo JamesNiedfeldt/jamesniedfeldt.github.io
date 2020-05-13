@@ -1,7 +1,12 @@
+.site-background {
+    background-color: rgb(241, 241, 241);
+}
+
 .body-content {
     padding: 20px;
+    background-color: white;
     border-style: solid;
-    border-color: lightgray;
+    border-color: darkgray;
     border-width: 1px;
     border-top: hidden;
 }
@@ -9,8 +14,9 @@
 .body-content-bottom {
     padding: 20px;
     margin-bottom: 40px;
+    background-color: white;
     border-style: solid;
-    border-color: lightgray;
+    border-color: darkgray;
     border-width: 1px;
     border-top: hidden;
     border-bottom-left-radius: 4px;
