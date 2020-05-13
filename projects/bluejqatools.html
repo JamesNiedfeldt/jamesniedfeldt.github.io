@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BlueJ Quality Assessment Tools</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="\styles\customstyle.css">
+
+        <!-- Scripts for Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!-- Page banner -->
+        <div class="container" id="banner"></div>
+
+        <!-- Navigation bar -->
+        <div class="container" id="navigation"></div>
+
+        <!-- Page content -->
+        <div class="container" id="content">
+            <h1 class="display-4 text-center bg-secondary text-white p-4 mb-0">BlueJ Quality Assessment Tools</h1>
+
+            <div class="body-content-bottom">
+                <div class="row">
+                    <div class="col-sm-7">
+
+                        <p>
+                            Quality Assessment Tools is an extension for <a href="https://www.bluej.org/" target="_blank">BlueJ</a> that checks the quality of
+                            the users' Java code against a set of tools. Its current iteration features <a href="https://checkstyle.sourceforge.io/" target="_blank">Checkstyle</a>
+                            and <a href="https://pmd.github.io/" target="_blank">PMD</a> checks, but the extension allows for future developers to add additional tools.
+                        </p>
+                        <p>
+                            This project was worked on for a class project as a team and based off of foundational work found 
+                            <a href="https://github.com/MetroCS/checkstyle4bluej" target="_blank">here</a>. Our contributions involved expanding on the original BlueJ Checkstyle Extension 
+                            to allow for PMD as well as restructuring the existing package to allow for ease of further development and implementation
+                            of additional tools.
+                        </p>
+                        <p>
+                            Users can edit preferences for each quality assessment tool, such as what properties for Checkstyle and PMD to evaluate. PMD checks are run when the code is compiled,
+                            and works in the background to produce a report so that the flow of work isn't hindered. For future developers, the existing Checkstyle for BlueJ extension code
+                            was reworked and components were decoupled to allow for greater ease of expansion.
+                        </p>
+
+                        <p>
+                            <a href="https://github.com/BlueJ-Code-Quality-Extension-Team/BlueJ-Quality-Assessment-Tools" target="_blank">Click here</a> to view the project's GitHub repository.
+                        </p>
+
+                    </div>
+    
+                    <div class="col-sm-5">
+                        <img src="\images\projects\bluejqatools\menu.jpg" class="img-fluid img-border my-1">
+                        <img src="\images\projects\card_bluejqatools.jpg" class="img-fluid img-border my-1">
+                        <img src="\images\projects\bluejqatools\preferences.jpg" class="img-fluid img-border my-1">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Load HTML for banner and navbar -->
+        <script>
+            $(function(){
+                $("#banner").load("\\elements\\banner.html");
+                $("#navigation").load("\\elements\\navigation.html", function(){
+                    $("#projectsNav").addClass("active");
+                });
+            })
+        </script>
+
+    </body>
+</html>
