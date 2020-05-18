@@ -22,7 +22,7 @@
 
         <!-- Page content -->
         <div class="container" id="content">
-            <div class="card-columns p-4" style="min-width: 20rem">
+            <div class="body-content-bottom card-columns p-4" style="min-width: 20rem">
 
                 <div class="card" id="funkybot" style="border-color:darkgrey">
                     <img class="card-img-top bottom-border" src="\images\projects\card_funkybot.jpg">
@@ -55,13 +55,16 @@
 
         </div>
 
-        <!-- Load HTML for banner and navbar -->
+        <div class="container" id="bottom"></div>
+
+        <!-- Load HTML for elements -->
         <script>
             $(function(){
                 $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#projectsNav").addClass("active");
                 });
+                $("#bottom").load("\\elements\\footer.html");
             })
         </script>
 

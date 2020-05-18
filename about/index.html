@@ -95,13 +95,16 @@
 
         </div>
 
-        <!-- Load HTML for banner and navbar -->
+        <div class="container" id="bottom"></div>
+
+        <!-- Load HTML for elements -->
         <script>
             $(function(){
                 $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#aboutNav").addClass("active");
                 });
+                $("#bottom").load("\\elements\\footer.html");
             })
         </script>
 
