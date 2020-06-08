@@ -28,9 +28,3 @@
     border-color: darkgray;
     border-width: 1px;
 }
-
-.bottom-border {
-    border-bottom-style:solid;
-    border-bottom-color: darkgray;
-    border-bottom-width: 1px;
-}
