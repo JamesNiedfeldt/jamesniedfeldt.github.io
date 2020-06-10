@@ -30,18 +30,18 @@
             <div class="body-content">
                 <p>
                     This tool can be used to search for Magic: the Gathering cards and find alternate, promotional,
-                    premium, or otherwise noteworthy printings. This tool is meant to make searching for ways to 
+                    premium, or otherwise noteworthy printings. It is meant to make searching for ways to 
                     customize and show off your decks easier.
                 </p>
                 <p>
                     To use, select what types of printings you want, then enter a card name to search for it. The 
-                    dropdown menu on the right will list prints and display it in the above image. Clicking the image
+                    dropdown menu on the right will list prints and display it in the image below. Clicking the image
                     will bring you to the specified card's Scryfall page.
                 </p>
             </div>
 
             <div class="body-content-bottom">
-                <div class="row">
+                <div class="row" style="min-height:400px;">
                     <div class="col-sm-8">
                         <div class="input-group h-50 mb-2">
                             <select multiple class="form-control" id="options" selected>
@@ -68,11 +68,11 @@
                     </div>
                     
                     <div class="col-sm-4">
-                        <a id="link" target="_blank">
-                            <img class="mb-2" style="height: 400px;" id="pic" src=""></img>
-                        </a>
-                        <br>
                         <select class="custom-select" id="results" onchange="display()"></select>
+                        <br>
+                        <a id="link" target="_blank">
+                            <img class="my-2 img-fluid" id="pic" src=""></img>
+                        </a>
                     </div>
                 </div>
             </div>
