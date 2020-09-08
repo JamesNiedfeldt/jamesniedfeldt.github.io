@@ -14,14 +14,16 @@
 
     </head>
     <body class="site-background">
-        <!-- Page banner -->
-        <div class="container" id="banner"></div>
-
         <!-- Navigation bar -->
-        <div class="container" id="navigation"></div>
+        <div class="sticky-top" id="navigation"></div>
+
+        <!-- Page title -->
+        <div class="container page-title">
+            <h1 class="display-2">Small Projects</h1>
+        </div>
 
         <!-- Page content -->
-        <div class="container" id="content">
+        <div class="container content-wrapper" id="content">
             <div class="body-content">
                 <p>
                     The projects listed on this page are smaller ones I created for class projects or for experimentation.
@@ -30,11 +32,10 @@
                 </p>
             </div>
 
+            <h1 class="body-headline">Color Picker/Color Blender</h1>
             <div class="body-content">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <h1>Color Picker/Color Blender</h1>
-                        <hr>
+                    <div class="col-sm-7">
                         <p>A pair of small Android apps written in Kotlin. Color Picker allows the user to 
                             use red, green, and blue sliders to manually select a color while Color Blender 
                             can be used to import colors and mix two of them proportionally.
@@ -43,24 +44,23 @@
                         <br>
                         <a href="https://github.com/JamesNiedfeldt/ColorBlender" target="_blank">Color Blender repository</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <img class="img-border img-fluid" src="\images\projects\smallproj\colorpicker.jpg">
                     </div>
                 </div>
             </div>
 
-            <div class="body-content-bottom">
+            <h1 class="body-headline">MtG Promo Finder</h1>
+            <div class="body-content">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <h1>MtG Promo Finder</h1>
-                        <hr>
+                    <div class="col-sm-7">
                         <p>A JavaScript tool that allows users to search for Magic: the Gathering cards and supplies them with a list of 
                             promotional and premium printings. It uses the <a href="https://scryfall.com/docs/api" target="_blank">Scryfall</a>
                             API to find cards and can be customized to return only specific types of printings.
                         </p>
                         <a href="promofinder.html">Tool page</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <img class="img-border img-fluid" src="\images\projects\smallproj\mtgpromofinder.jpg">
                     </div>
                 </div>
@@ -68,12 +68,11 @@
             
         </div>
 
-        <div class="container" id="bottom"></div>
+        <div id="bottom" class="footer-wrapper"></div>
 
         <!-- Load HTML for elements -->
         <script>
             $(function(){
-                $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#projectsNav").addClass("active");
                 });

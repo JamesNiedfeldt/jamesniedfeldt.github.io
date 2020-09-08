@@ -17,17 +17,17 @@
 
     </head>
     <body class="site-background">
-        <!-- Page banner -->
-        <div class="container" id="banner"></div>
-
         <!-- Navigation bar -->
-        <div class="container" id="navigation"></div>
+        <div class="sticky-top" id="navigation"></div>
+
+        <!-- Page title -->
+        <div class="container page-title">
+            <h1 class="display-2">MtG Promo Finder</h1>
+        </div>
 
         <!-- Page content -->
-        <div class="container" id="content">
-            <h1 class="display-4 text-center bg-secondary text-white p-4 mb-0">MtG Promo Finder</h1>
-
-            <div class="body-content">
+        <div class="container content-wrapper" id="content">
+            <div class="body-content" style="border-bottom-style: solid; border-width: 1px; border-color: #6c757d">
                 <p>
                     This tool can be used to search for Magic: the Gathering cards and find alternate, promotional,
                     premium, or otherwise noteworthy printings. It is meant to make searching for ways to 
@@ -40,11 +40,11 @@
                 </p>
             </div>
 
-            <div class="body-content-bottom">
+            <div class="body-content">
                 <div class="row" style="min-height:400px;">
                     <div class="col-sm-8">
                         <div class="input-group h-50 mb-2">
-                            <select multiple class="form-control" id="options" selected>
+                            <select multiple class="form-control inner-border" id="options" selected>
                                 <option value="is:promo" selected>Promos</option>
                                 <option value="is:masterpiece">Masterpiece series</option>
                                 <option value="is:spellbook">Signature Spellbook</option>
@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control" placeholder="Card name" id="name">
+                            <input type="text" class="form-control inner-border" placeholder="Card name" id="name">
                             <div class="input-group-append">
                                 <button class="btn btn-secondary" onclick="search()" id="btn">Search</button>
                             </div>
@@ -68,7 +68,7 @@
                     </div>
                     
                     <div class="col-sm-4">
-                        <select class="custom-select" id="results" onchange="display()"></select>
+                        <select class="custom-select inner-border" id="results" onchange="display()"></select>
                         <br>
                         <a id="link" target="_blank">
                             <img class="my-2 img-fluid" id="pic" src=""></img>
@@ -79,12 +79,11 @@
             
         </div>
 
-        <div class="container" id="bottom"></div>
+        <div id="bottom" class="footer-wrapper"></div>
 
         <!-- Load HTML for elements -->
         <script>
             $(function(){
-                $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#projectsNav").addClass("active");
                 });

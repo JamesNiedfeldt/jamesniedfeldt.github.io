@@ -14,17 +14,17 @@
 
     </head>
     <body class="site-background">
-        <!-- Page banner -->
-        <div class="container" id="banner"></div>
-
         <!-- Navigation bar -->
-        <div class="container" id="navigation"></div>
+        <div class="sticky-top" id="navigation"></div>
+
+        <!-- Page title -->
+        <div class="container page-title">
+            <h1 class="display-2">BlueJ Quality Assessment Tools</h1>
+        </div>
 
         <!-- Page content -->
-        <div class="container" id="content">
-            <h1 class="display-4 text-center bg-secondary text-white p-4 mb-0">BlueJ Quality Assessment Tools</h1>
-
-            <div class="body-content-bottom">
+        <div class="container content-wrapper" id="content">
+            <div class="body-content">
                 <div class="row">
                     <div class="col-sm-7">
 
@@ -59,12 +59,11 @@
             
         </div>
 
-        <div class="container" id="bottom"></div>
+        <div id="bottom" class="footer-wrapper"></div>
 
         <!-- Load HTML for elements -->
         <script>
             $(function(){
-                $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#projectsNav").addClass("active");
                 });

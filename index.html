@@ -15,15 +15,18 @@
     </head>
 
     <body class="site-background">
-        <!-- Page banner -->
-        <div class="container" id="banner"></div>
-
         <!-- Navigation bar -->
-        <div class="container" id="navigation"></div>
+        <div class="sticky-top" id="navigation"></div>
+
+        <!-- Page title -->
+        <div class="container page-title">
+            <h1 class="display-2">James Niedfeldt</h1>
+            <h4>Aspiring Software Developer</h4>
+        </div>
 
         <!-- Page content -->
-        <div class="container" id="content">
-            <div class="body-content-bottom">
+        <div class="container content-wrapper" id="content">
+            <div class="body-content">
                 <div class="row">
                     <div class="col-sm-4">
                         <img src ="https://avatars2.githubusercontent.com/u/37161212?s=460&u=1c8d52a75de47332402fb44d0d9d93d85f29c0d8&v=4" class="img-fluid img-border m-2">
@@ -46,12 +49,11 @@
             </div>
         </div>
 
-        <div class="container" id="bottom"></div>
+        <div id="bottom" class="footer-wrapper"></div>
 
         <!-- Load HTML for elements -->
         <script>
             $(function(){
-                $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#homeNav").addClass("active");
                 });

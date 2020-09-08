@@ -14,15 +14,17 @@
 
     </head>
     <body class="site-background">
-        <!-- Page banner -->
-        <div class="container" id="banner"></div>
-
         <!-- Navigation bar -->
-        <div class="container" id="navigation"></div>
+        <div class="sticky-top" id="navigation"></div>
+
+        <!-- Page title -->
+        <div class="container page-title">
+            <h1 class="display-2">About Me</h1>
+        </div>
 
         <!-- Page content -->
-        <div class="container" id="content">
-            <h1 class="display-4 text-center bg-secondary text-white p-4 mb-0">Background</h1>
+        <div class="container content-wrapper" id="content">
+            <h1 class="body-headline">Background</h1>
 
             <div class="body-content" id="background">
                 <p>
@@ -31,18 +33,18 @@
                     engineering techniques, with a heavy focus on agile development and object-oriented design.
                 </p>
                 <p>
-                    My interests lie mainly in cybersecurity and machine learning, but in the meantime I want to expand my current knowledge
+                    My interests lie mainly in cybersecurity and computer graphics, but in the meantime I want to expand my current knowledge
                     base and dive into all that software engineering has to offer. As such I'm seeking any opportunity that will challenge me
                     to learn new concepts, techniques, and technologies.
                 </p>
             </div>
 
-            <h1 class="display-4 text-center bg-secondary text-white p-4 mb-0">Languages and Tools</h1>
+            <h1 class="body-headline">Languages and Tools</h1>
 
             <div class="body-content" id="background">
                 <div class="card-deck">
-                    <div class="card">
-                        <div class="card-header">Proficient with:</div>
+                    <div class="card inner-border">
+                        <div class="card-header inner-border">Proficient with:</div>
                         <div class="card-body">
                             <ul>
                                 <li>Java</li>
@@ -52,8 +54,8 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-header">Intermediate knowledge of:</div>
+                    <div class="card inner-border">
+                        <div class="card-header inner-border">Intermediate knowledge of:</div>
                         <div class="card-body">
                             <ul>
                                 <li>C#</li>
@@ -65,8 +67,8 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="card-header">Basic knowledge of:</div>
+                    <div class="card inner-border">
+                        <div class="card-header inner-border">Basic knowledge of:</div>
                         <div class="card-body">
                             <ul>
                                 <li>SQL</li>
@@ -81,9 +83,9 @@
                 </div>
             </div>
 
-            <h1 class="display-4 text-center bg-secondary text-white p-4 mb-0">Skills and Knowledge</h1>
+            <h1 class="body-headline">Skills and Knowledge</h1>
 
-            <div class="body-content-bottom" id="background">
+            <div class="body-content" id="background">
                 <ul style="column-count: 2">
                     <li>Developing and debugging in IDEs</li>
                     <li>Object-oriented programming and design</li>
@@ -95,12 +97,11 @@
 
         </div>
 
-        <div class="container" id="bottom"></div>
+        <div id="bottom" class="footer-wrapper"></div>
 
         <!-- Load HTML for elements -->
         <script>
             $(function(){
-                $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#aboutNav").addClass("active");
                 });

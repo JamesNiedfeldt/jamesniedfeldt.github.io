@@ -14,51 +14,52 @@
 
     </head>
     <body class="site-background">
-        <!-- Page banner -->
-        <div class="container" id="banner"></div>
-
         <!-- Navigation bar -->
-        <div class="container" id="navigation"></div>
+        <div class="sticky-top" id="navigation"></div>
+
+        <!-- Page title -->
+        <div class="container page-title">
+            <h1 class="display-2">Main Projects</h1>
+        </div>
 
         <!-- Page content -->
-        <div class="container" id="content">
+        <div class="container content-wrapper" id="content">
+            <h1 class="body-headline">FunkyBot</h1>
             <div class="body-content">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <h1>FunkyBot</h1>
-                        <hr>
-                        <p>A general purpose Discord bot.</p>
+                    <div class="col-sm-7">
+                        <p>A general purpose Discord bot containing fun and useful chat commands ranging from telling jokes
+                            to scheduling helpful reminders.</p>
                         <a href="funkybot.html">More information</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <img class="img-border img-fluid" src="\images\projects\card_funkybot.jpg">
                     </div>
                 </div>
             </div>
 
+            <h1 class="body-headline">Initiative Tracker</h1>
             <div class="body-content">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <h1>Initiative Tracker</h1>
-                        <hr>
-                        <p>A tool for tracking battles in Dungeons & Dragons.</p>
+                    <div class="col-sm-7">
+                        <p>A tool for tracking hit points, conditions, and turn order during battles in Dungeons & Dragons.</p>
                         <a href="initiativetracker.html">More information</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <img class="img-border img-fluid" src="\images\projects\card_initiativetracker.jpg">
                     </div>
                 </div>
             </div>
 
-            <div class="body-content-bottom">
+            <h1 class="body-headline">BlueJ Quality Assessment Tools</h1>
+            <div class="body-content">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <h1>BlueJ Quality Assessment Tools</h1>
-                        <hr>
-                        <p>An extendable add-on to BlueJ to allow for installation of quality assessment tools.</p>
+                    <div class="col-sm-7">
+                        <p>An add-on to BlueJ that checks code quality using PMD and Checkstyle
+                            that is easily extendable to add additional quality assessment tools.</p>
                         <a href="bluejqatools.html">More information</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-5">
                         <img class="img-border img-fluid" src="\images\projects\card_bluejqatools.jpg">
                     </div>
                 </div>
@@ -66,12 +67,11 @@
             
         </div>
 
-        <div class="container" id="bottom"></div>
+        <div id="bottom" class="footer-wrapper"></div>
 
         <!-- Load HTML for elements -->
         <script>
             $(function(){
-                $("#banner").load("\\elements\\banner.html");
                 $("#navigation").load("\\elements\\navigation.html", function(){
                     $("#projectsNav").addClass("active");
                 });
